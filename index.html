@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Janala</title>
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+            @font-face {
+                font-family: 'BanglaFont';
+                src: url('/assets/fonts/bangla-font.ttf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+            }
+
+            .bangla-text {
+                font-family: 'BanglaFont', sans-serif;
+            }
+        </style>
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between px-10 py-5">
+            <div class="flex">
+                <p class="py-2 font-semibold text-xl">English</p>
+                <img src="assets/logo.png" alt="">
+                <p class="py-2 font-semibold text-xl">জানালা</p>
+            </div>
+            <div class="flex gap-3">
+                <button class="btn btn-outline btn-primary"><img src="assets/fa-circle-question.png" alt="">FAQ</button>
+
+                <button class="btn btn-outline btn-primary"><img src="assets/fa-book-open.png" alt="">Learn</button>
+
+                <button class="btn btn-outline btn-primary"><img src="assets/fa-arrow-right-from-bracket.png" alt="">Log Out</button>
+            </div>
+        </nav>
+        <hr class="text-gray-400">
+    </header>
+
+    <section class="banner flex justify-around px-15">
+        <div class="py-30">
+           <p class="text-3xl font-bold"><span class="text-blue-500">English</span> is Easy!!</p>
+           <p class="py-5">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা<br> বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+           <label class="mb-3 block" for="">
+            <input class="rounded-sm p-2"  type="text" name="" id="" placeholder="Enter Your Name">
+           </label>
+           <label class="mb-3 block" for="">
+            <input class="rounded-sm p-2" type="password" name="" id="" placeholder="Enter Your Password">
+           </label>
+           <button class="btn btn-primary ">Get Started</button>
+        </div>
+        <div>
+           <img class="w-[500px] h-[500px]" src="assets/hero-student.png" alt="">
+        </div>
+    </section>
+
+
+
+    <section>
+        <h1 class="text-3xl font-bold text-center mt-20"><span class="text-blue-500">Let's</span> Learn Vocabularies</h1>
+    </section>
+
+
+    <section class="mb-30">
+        <h1 class="text-3xl font-bold text-center mt-20 mb-15"><span class="text-blue-500">Frequently</span> Asked Questions</h1>
+        <div class="w-11/12 mx-auto flex flex-col gap-5">
+            <div class="collapse collapse-plus bg-gray-100 bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">1. What is the difference between var, let, and const?</div>
+                <div class="collapse-content text-sm">a</div>
+              </div>
+              <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">2. What is the difference between map(), forEach(), and filter()?</div>
+                <div class="collapse-content text-sm">a</div>
+              </div>
+              <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">3. What are arrow functions, and how are they different from regular functions?</div>
+                <div class="collapse-content text-sm">a</div>
+              </div>
+              <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">4. How do javascript Promises work?</div>
+                <div class="collapse-content text-sm">a</div>
+              </div>
+              <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">5. How does closure work in javascript?</div>
+                <div class="collapse-content text-sm">a</div>
+              </div>
+        </div>
+    </section>
+
+    <hr class="text-gray-400">
+    <footer>
+        <div class="flex justify-between px-10 mt-10 mb-5">
+            <div>
+                <div class="flex">
+                    <p class="py-2 font-semibold text-xl">English</p>
+                    <img src="assets/logo.png" alt="">
+                    <p class="py-2 font-semibold text-xl">জানালা</p>
+                </div>
+                <p>ইংরেজি শিখুন সহজে</p>
+                <p>Providing ED-Tech Applications since 2025</p>
+            </div>
+            <div class="mt-8">
+               <p class="py-1">Follow Us</p>
+               <div class="flex gap-2">
+                <img class="w-5 h-5" src="assets/github-thumb.png" alt="">
+                <img class="w-5 h-5" src="assets/instagram-thumb.png" alt="">
+                <img class="w-5 h-5" src="assets/youtube-thumb.png" alt="">
+               </div>
+            </div>
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>
