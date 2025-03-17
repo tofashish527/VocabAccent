@@ -32,12 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Show sections
         navbar.style.display = "block";
         vocabSection.style.display = "block";
         faqSection.style.display = "block";
 
-        // Hide the banner
         banner.style.display = "none";
 
         Swal.fire({
@@ -197,39 +195,4 @@ const loadworddetails=(id)=>{
     </div>`;
 };
 
-  
-//   const displayworddatails = (word) => {
-//     console.log(word);
-//     document.getElementById('word_details').showModal();
-//     const detailscontainer = document.getElementById('details_container');
-
-//     // Default values to prevent displaying undefined/null
-//     const wordText = word.word || "N/A";
-//     const meaning = word.meaning || "No meaning available.";
-//     const sentence = word.sentence || "No example available.";
-//     const synonyms = Array.isArray(word.synonyms) && word.synonyms.length > 0 
-//                      ? word.synonyms 
-//                      : ["No synonyms available"];
-
-//     detailscontainer.innerHTML = `
-//     <div class="border border-blue-100 px-5 pt-2 pb-2">
-//       <div class="flex items-center gap-1">
-//         <p class="flex items-center gap-1 font-bold text-xl">${wordText} 
-//           <img class="w-5 h-5" src="https://img.icons8.com/?size=100&id=9622&format=png&color=000000">
-//         </p>
-//       </div>
-//       <p class="font-bold text-sm pt-2 pb-2">Meaning</p>
-//       <p>${meaning}</p>
-//       <p class="font-bold text-sm pt-2 pb-2">Example</p>
-//       <p>${sentence}</p>
-//       <p class="font-semibold text-sm pt-2 pb-2">সমার্থক শব্দ গুলো</p>
-//       ${synonyms.map(syn => `<button class="bg-blue-50 p-1 rounded-lg border border-gray-300">${syn}</button>`).join('')}
-//     </div>`;
-// };
-
-//   document.getElementById('searchinput').addEventListener('keyup',(e)=>{
-//       const input=e.target.value;
-//       loadvideo(input)
-//       console.log(input)
-  //})
 
