@@ -141,7 +141,7 @@ const displaywords = (words) => {
         //console.log(word)
         const div = document.createElement("div");
         div.innerHTML = `
-        <div class=" bg-base-100 h-64 shadow-sm pt-3 pb-5 mt-6 mb-5">
+        <div class="hover:bg-blue-50 bg-base-100 h-64 shadow-sm pt-3 pb-5 mt-6 mb-5">
         <div class="text-center">
         <p class="mt-5 text-2xl font-bold">${word.word}</p>
         <p class="mt-5 font-medium">Meaning/Pronounciation</p>

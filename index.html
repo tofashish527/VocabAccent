@@ -23,14 +23,15 @@
                 color: white;
             }
             body {
-  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
         </style>
 </head>
 
 <body>
-    <section id="navbar">
-        <nav class="flex justify-between px-10 py-5">
+    <section id="navbar" class="">
+        <nav class="flex justify-between px-10 py-5 fixed z-50 top-0 left-0 right-0 bg-white border-b border-gray-400">
             <div class="flex">
                 <p class="py-2 font-semibold text-xl">English</p>
                 <img src="assets/logo.png" alt="">
@@ -44,7 +45,6 @@
                 <button id="logout-btn" class="btn btn-outline btn-primary"><img src="assets/fa-arrow-right-from-bracket.png" alt="">Log Out</button>
             </div>
         </nav>
-        <hr class="text-gray-400">
     </section>
 
     <section id="banner" class="banner flex justify-around px-15">
@@ -65,7 +65,7 @@
     </section>
 
 
-    <section id="Vocab" class="px-20 mt-20 mb-10 ">
+    <section id="Vocab" class="px-20 mt-36 mb-20 pt-5 ">
         <h1 class="text-3xl font-bold text-center mt-20"><span class="text-blue-500">Let's</span> Learn Vocabularies</h1>
         <div id="level-container" class="flex justify-center py-5 gap-2">
             <!-- <button  class="btn btn-outline btn-primary"><img src="assets/fa-book-open.png" alt="">Lesson-1</button>  -->
@@ -106,40 +106,40 @@
   </dialog>
     
 
-    <section id="faq" class="mb-20">
+    <section id="faq" class="mt-36 mb-20 pt-10">
         <h1 class="text-3xl font-bold text-center mt-20 mb-15"><span class="text-blue-500">Frequently</span> Asked Questions</h1>
         <div class="w-11/12 mx-auto flex flex-col gap-5">
             <div class="collapse collapse-plus bg-gray-100 bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold">1. What is the difference between var, let, and const?</div>
-                <div class="collapse-content text-sm">a</div>
+                <div class="collapse-content text-sm">-var is function-scoped, can be re-declared/reassigned, and is hoisted with undefined.<br>-let is block-scoped, cannot be re-declared but can be reassigned, and is hoisted without initialization.<br>-const is block-scoped, cannot be re-declared or reassigned, but allows modifying object/array properties-</div>
               </div>
               <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold">2. What is the difference between map(), forEach(), and filter()?</div>
-                <div class="collapse-content text-sm">a</div>
+                <div class="collapse-content text-sm">- map() returns a new array by transforming each element.<br>-forEach() loops through elements but does not return a new array.<br>-filter() returns a new array with elements that pass a condition.</div>
               </div>
               <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold">3. What are arrow functions, and how are they different from regular functions?</div>
-                <div class="collapse-content text-sm">a</div>
+                <div class="collapse-content text-sm">Arrow functions (()=>{}) have a shorter syntax, do not bind this, and cannot be used as constructors, unlike regular functions (function(){}).</div>
               </div>
               <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold">4. How do javascript Promises work?</div>
-                <div class="collapse-content text-sm">a</div>
+                <div class="collapse-content text-sm">JavaScript Promises represent the eventual completion (or failure) of an asynchronous operation and its result. They have three states: pending, fulfilled, and rejected, and use .then(), .catch(), and .finally() to handle outcomes.</div>
               </div>
               <div class="collapse collapse-plus  bg-gray-100 bg-base-100 border border-base-300">
                 <input type="radio" name="my-accordion-3" checked="checked" />
                 <div class="collapse-title font-semibold">5. How does closure work in javascript?</div>
-                <div class="collapse-content text-sm">a</div>
+                <div class="collapse-content text-sm">In JavaScript, closure occurs when a function retains access to variables from its lexical scope (the scope in which it was defined), even after that scope has finished executing. This allows the function to "remember" and use those variables even when called outside of their original scope.</div>
               </div>
         </div>
     </section>
 
     <hr class="text-gray-400">
     <footer>
-        <div class="flex justify-between px-10 mt-10 mb-5">
+        <div class="flex justify-between px-20 mt-5 mb-20">
             <div>
                 <div class="flex">
                     <p class="py-2 font-semibold text-sm">English</p>
@@ -152,14 +152,16 @@
             <div class="mt-8">
                <p class="py-1">Follow Us</p>
                <div class="flex gap-2">
-                <img class="w-5 h-5" src="assets/github-thumb.png" alt="">
-                <img class="w-5 h-5" src="assets/instagram-thumb.png" alt="">
-                <img class="w-5 h-5" src="assets/youtube-thumb.png" alt="">
+                <a href="https://github.com/tofashish527"><img class="w-5 h-5" src="assets/github-thumb.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img class="w-5 h-5" src="assets/instagram-thumb.png" alt=""></a>
+                <a href="https://www.youtube.com/"><img class="w-5 h-5" src="assets/youtube-thumb.png" alt=""></a>
+                
+                
                </div>
             </div>
         </div>   
     </footer>
-
+   
    
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script/index.js"></script>
