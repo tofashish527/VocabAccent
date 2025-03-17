@@ -37,8 +37,8 @@ https://openapi.programming-hero.com/api/words/all
 ### Navbar
 - [ ] Create a navbar with a logo and brand name on the left
 - [ ] Create three buttons with icons: FAQ, Learn, and Logout
-- [ ] when clicking the FAQ button user will jump to the FAQ section //
-- [ ] when clicking the Learn button user will jump to the Vocabulary section //
+- [ ] when clicking the FAQ button user will jump to the FAQ section
+- [ ] when clicking the Learn button user will jump to the Vocabulary section 
 - [ ] Navbar will be fixed at the top with a bottom border //
 
 ### Banner
@@ -102,7 +102,7 @@ https://openapi.programming-hero.com/api/words/all
 - [ ] when clicking "Logout"
   - [ ] hide the Navbar, Vocabulary Section, and FAQ Section
   - [ ]  show only the Banner and Footer
-- [ ] Apply smooth scrolling for FAQ & Learn buttons
+- [ ] Apply smooth scrolling for FAQ & Learn buttons 
 
 ### Handling Invalid Data
 - [ ] avoid displaying falsy values like `undefined` or `null`
@@ -131,6 +131,16 @@ Follow this [Documentation](https://sweetalert2.github.io/)
       window.speechSynthesis.speak(utterance);
     }
 ```
+// function pronounceWord(word) {
+//     const utterance = new SpeechSynthesisUtterance(word);
+//     utterance.lang = 'en-US'; // Use correct language code
+
+//     // Select an English voice
+//     const voices = window.speechSynthesis.getVoices();
+//     utterance.voice = voices.find(voice => voice.lang === 'en-US') || voices[0];
+
+//     window.speechSynthesis.speak(utterance);
+// }
 For More >>  you can explore this implementation 👉  [https://codepen.io/Ferdous-Zihad/pen/PwoJMmJ](https://codepen.io/Ferdous-Zihad/pen/PwoJMmJ)
 
 ---

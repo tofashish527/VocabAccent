@@ -22,6 +22,9 @@
                 background:#422AD5 ;
                 color: white;
             }
+            body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
         </style>
 </head>
 
@@ -34,11 +37,11 @@
                 <p class="py-2 font-semibold text-xl">জানালা</p>
             </div>
             <div class="flex gap-3">
-                <button class="btn btn-outline btn-primary"><img src="assets/fa-circle-question.png" alt="">FAQ</button>
+                <button id="faq-btn" class="btn btn-outline btn-primary"><img src="assets/fa-circle-question.png" alt="">FAQ</button>
 
-                <button class="btn btn-outline btn-primary"><img src="assets/fa-book-open.png" alt="">Learn</button>
+                <button id="learn-btn" class="btn btn-outline btn-primary"><img src="assets/fa-book-open.png" alt="">Learn</button>
 
-                <button class="btn btn-outline btn-primary"><img src="assets/fa-arrow-right-from-bracket.png" alt="">Log Out</button>
+                <button id="logout-btn" class="btn btn-outline btn-primary"><img src="assets/fa-arrow-right-from-bracket.png" alt="">Log Out</button>
             </div>
         </nav>
         <hr class="text-gray-400">
@@ -49,12 +52,12 @@
            <p class="text-3xl font-bold"><span class="text-blue-500">English</span> is Easy!!</p>
            <p class="py-5">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা<br> বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
            <label class="mb-3 block" >
-            <input class="rounded-sm p-1"  type="text" name=""  placeholder="Enter Your Name">
+            <input id="name" class="rounded-sm p-1 w-64"  type="text" name=""  placeholder="Enter Your Name">
            </label>
            <label class="mb-3 block">
-            <input class="rounded-sm p-1" type="password" name=""  placeholder="Enter Your Password">
+            <input id="pass" class="rounded-sm p-1 w-64" type="password" name=""  placeholder="Enter login code(123456)">
            </label>
-           <button class="btn btn-primary ">Get Started</button>
+           <button id="start-btn" class="btn btn-primary ">Get Started</button>
         </div>
         <div>
            <img class="w-[500px] h-[500px]" src="assets/hero-student.png" alt="">
@@ -62,7 +65,7 @@
     </section>
 
 
-    <section id="Vocab" class="px-20 ">
+    <section id="Vocab" class="px-20 mt-20 mb-10 ">
         <h1 class="text-3xl font-bold text-center mt-20"><span class="text-blue-500">Let's</span> Learn Vocabularies</h1>
         <div id="level-container" class="flex justify-center py-5 gap-2">
             <!-- <button  class="btn btn-outline btn-primary"><img src="assets/fa-book-open.png" alt="">Lesson-1</button>  -->
@@ -103,7 +106,7 @@
   </dialog>
     
 
-    <section id="faq" class="mb-30">
+    <section id="faq" class="mb-20">
         <h1 class="text-3xl font-bold text-center mt-20 mb-15"><span class="text-blue-500">Frequently</span> Asked Questions</h1>
         <div class="w-11/12 mx-auto flex flex-col gap-5">
             <div class="collapse collapse-plus bg-gray-100 bg-base-100 border border-base-300">
@@ -157,6 +160,8 @@
         </div>   
     </footer>
 
+   
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="script/index.js"></script>
 </body>
 
