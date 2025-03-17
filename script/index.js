@@ -145,7 +145,7 @@ const displaywords = (words) => {
         <div class="text-center">
         <p class="mt-5 text-2xl font-bold">${word.word}</p>
         <p class="mt-5 font-medium">Meaning/Pronounciation</p>
-        <p class="mt-5 text-2xl font-bold">"${word.meaning ? word.meaning :'অর্থ নেই'}/${word.pronunciation || ''}"</p>
+        <p class="mt-5 text-2xl font-bold">"${word.meaning ? word.meaning :'অর্থ নেই'} / ${word.pronunciation || ''}"</p>
         <div class="flex justify-around pt-6">
         <button onclick="loadworddetails('${word.id}')" id="" class="bg-[#9ac2e7] w-7 h-7 rounded-lg p-1"><img class="w-5 h-5" src="https://img.icons8.com/?size=100&id=84013&format=png&color=000000"></button>
         <button onclick="pronounceWord('${word.word}')" class="bg-[#9ac2e7] w-7 h-7 rounded-lg p-1"><img class="w-5 h-5" src="https://img.icons8.com/?size=100&id=4nJj4Jt11SNK&format=png&color=000000"></button>
@@ -180,7 +180,7 @@ const loadworddetails=(id)=>{
         <div class="flex items-center gap-1">
             <p class="flex items-center gap-1 font-bold text-xl">
                 ${word.word} 
-                (<img class="w-5 h-5" src="https://img.icons8.com/?size=100&id=9622&format=png&color=000000">: ${word.meaning ? word.meaning :'অর্থ নেই'})
+                (<img class="w-5 h-5" src="https://img.icons8.com/?size=100&id=9622&format=png&color=000000">: ${word.pronunciation})
             </p>
         </div>
         <p class="font-bold text-sm pt-2 pb-2">Meaning</p>
