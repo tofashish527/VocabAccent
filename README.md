@@ -39,7 +39,7 @@ https://openapi.programming-hero.com/api/words/all
 - [ ] Create three buttons with icons: FAQ, Learn, and Logout
 - [ ] when clicking the FAQ button user will jump to the FAQ section
 - [ ] when clicking the Learn button user will jump to the Vocabulary section 
-- [ ] Navbar will be fixed at the top with a bottom border //
+- [ ] Navbar will be fixed at the top with a bottom border
 
 ### Banner
 - [ ] Create a banner with a title and paragraph along with a login form on the left as Figma
@@ -56,7 +56,7 @@ https://openapi.programming-hero.com/api/words/all
 
 ### Footer
 - [ ] Create a footer that includes the logo and social icons as per Figma
-- [ ] redirect users to his social profiles in a new Tab when clicking on social icons //
+- [ ] redirect users to his social profiles in a new Tab when clicking on social icons
 
 ### Vocabulary Section
 - [ ] Show a center-aligned heading as Figma
