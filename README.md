@@ -30,7 +30,7 @@ VocabAccent is a dynamic and responsive English learning platform designed to he
 ---
 
 ## 🚀 Live Preview
-[Live Site Link]()
+[Live Site Link](https://assignment-6-english-jaanaalaa.netlify.app/)
 
 ---
 
@@ -77,5 +77,3 @@ VocabAccent is a dynamic and responsive English learning platform designed to he
 - Web Speech API (`SpeechSynthesisUtterance`)
 - Custom Fonts
 - Smooth Scroll
-
----
